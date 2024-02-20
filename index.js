@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 
 const TokenRoute = require("./routes/token");
+const CallbackRoute = require("./routes/callback")
 
 app.listen(5000, () => {
   console.log("Server is running at 5000");
@@ -16,3 +17,4 @@ app.get("/", (req, res) => {
 });
 
 app.use("/token", TokenRoute);
+app.use("/app",CallbackRoute)
