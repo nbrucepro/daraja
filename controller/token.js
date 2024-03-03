@@ -51,7 +51,7 @@ const stkPush = async (req, res) => {
     PartyA: `254${phone}`,
     PartyB: 174379,
     PhoneNumber: `254${phone}`,
-    CallBackURL: "https://swyng-daraja.onrender.com/app/callback",
+    CallBackURL: "https://us-central1-com-carpool-swyng-dev.cloudfunctions.net/mpesaWebhook",
     AccountReference: "Swyng Mpesa Test",
     TransactionDesc: "Swyng Testing stk push",
   };
